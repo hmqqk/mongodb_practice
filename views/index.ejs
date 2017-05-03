@@ -1,0 +1,14 @@
+﻿  <% if (!user) { %>
+  <div class="hero-unit">
+    <h1>Mongodb</h1>
+    <p>MongoDB 是一个基于分布式文件存储的数据库.</p>
+    <p>
+      <a class="btn btn-primary btn-large" href="/login">登录</a>
+      <a class="btn btn-large" href="/reg"> 立即注册</a>
+    </p>
+  </div>
+<% } else { %>
+  <p>欢迎您,<%= locals.user.name %></p>
+  <a href="/logout">  登出</a>
+  <% } %>
+ 
